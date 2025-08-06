@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario SENA</title>
+        <link rel="stylesheet" href="_styles.css">
+    </head>
+    <body>
+        <!-- Título principal del formulario -->
+        <h1>FORMULARIO SENA V1</h1>
+        <!-- Subtítulo de agradecimiento -->
+        <p>GRACIAS POR DEJAR SUS DATOS</p>
+        <!-- Inicio del formulario -->
+        <form action>
+            <!-- Campo para el nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"
+                placeholder="Por favor ingrese su nombre" required>
+
+            <!-- Campo para el correo electrónico -->
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email"
+                placeholder="Por favor ingrese su correo" required>
+
+            <!-- Campo para la edad -->
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad"
+                placeholder="Por favor ingrese su edad" required>
+
+            <!-- Selección de opción genérica -->
+            <label for="opcion">Seleccione una opción:</label>
+            <select id="opcion" name="opcion" required>
+                <option value>Seleccione una opción</option>
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+                <option value="opcion3">Opción 3</option>
+            </select>
+
+            <!-- Pregunta sobre compra de carro -->
+            <label>¿Planea comprar un carro en los próximos 5 años?</label>
+            <div class="opciones">
+                <label><input type="radio" id="si" name="plan_carro"
+                        value="si">Sí</label>
+                <label><input type="radio" id="no" name="plan_carro"
+                        value="no">No</label>
+                <label><input type="radio" id="quizas" name="plan_carro"
+                        value="quizas">Quizás</label>
+            </div>
+
+            <!-- Selección de marca favorita de carro -->
+            <label for="marca">¿Cuál es su marca de carro favorita?</label>
+            <select id="marca" name="marca" required>
+                <option value>Seleccione una opción</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="renault">Renault</option>
+                <option value="mazda">Mazda</option>
+                <option value="toyota">Toyota</option>
+                <option value="otra">Otra</option>
+            </select>
+
+            <!-- Selección de medios de transporte -->
+            <label>¿Qué tipo de medio de transporte posee?</label>
+            <div class="opciones">
+                <label><input type="checkbox" id="carro" name="transporte"
+                        value="carro">Carro</label>
+                <label><input type="checkbox" id="bote" name="transporte"
+                        value="bote">Bote</label>
+                <label><input type="checkbox" id="bicicleta" name="transporte"
+                        value="bicicleta">Bicicleta</label>
+                <label><input type="checkbox" id="moto" name="transporte"
+                        value="moto">Motocicleta</label>
+                <label><input type="checkbox" id="avion" name="transporte"
+                        value="avion">Avión</label>
+                <label><input type="checkbox" id="patineta" name="transporte"
+                        value="patineta">Patineta</label>
+            </div>
+
+            <!-- Campo para comentarios o sugerencias -->
+            <label for="comentarios">¿Algún comentario o sugerencia?</label>
+            <textarea id="comentarios" name="comentarios"
+                placeholder="Por favor ingrese sus comentarios"></textarea>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
